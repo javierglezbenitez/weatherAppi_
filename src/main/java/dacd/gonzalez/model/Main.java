@@ -1,11 +1,11 @@
 package dacd.gonzalez.model;
 
-public class Parameter {
+public class Main {
     private final double temp;
     private final int humidity;
 
 
-    public Parameter(double temp, int humidity) {
+    public Main(double temp, int humidity) {
         this.temp = temp;
         this.humidity = humidity;
     }

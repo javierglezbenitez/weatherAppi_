@@ -1,23 +1,45 @@
 package dacd.gonzalez.model;
 
-import java.util.ArrayList;
-
 public class List {
 
-        private final ArrayList<Weather> list;
 
-        private final City city;
+    private final Main main;
 
-    public List(ArrayList<Weather> list, City city) {
-        this.list = list;
-        this.city = city;
+    private final Cloud clouds;
+
+
+    private final Wind wind;
+
+    private final int dt;
+
+    private final Double pop;
+
+
+    public List(Main main, Cloud clouds, Wind wind, int dt, Double pop) {
+        this.main = main;
+        this.clouds = clouds;
+        this.wind = wind;
+        this.dt = dt;
+        this.pop = pop;
     }
 
-    public ArrayList<Weather> getList() {
-        return list;
+    public Main getMain() {
+        return main;
     }
 
-    public City getCity() {
-        return city;
+    public Cloud getClouds() {
+        return clouds;
+    }
+
+    public Wind getWind() {
+        return wind;
+    }
+
+    public int getDt() {
+        return dt;
+    }
+
+    public Double getPop() {
+        return pop;
     }
 }

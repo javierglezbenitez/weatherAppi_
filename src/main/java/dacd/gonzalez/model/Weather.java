@@ -1,44 +1,17 @@
 package dacd.gonzalez.model;
 
 import java.time.Instant;
+import java.util.ArrayList;
 
 public class Weather {
-    private final Parameter main;
-
-    private final Cloud clouds;
-
-    private final Rain rain;
-
-    private final Wind wind;
-
-    private final int dt;
+    private final ArrayList<List> list;
 
 
-    public Weather(Parameter main, Cloud clouds, Rain rain, Wind wind, int dt) {
-        this.main = main;
-        this.clouds = clouds;
-        this.rain = rain;
-        this.wind = wind;
-        this.dt = dt;
+    public Weather(ArrayList<List> list) {
+        this.list = list;
     }
 
-    public Parameter getMain() {
-        return main;
-    }
-
-    public Cloud getClouds() {
-        return clouds;
-    }
-
-    public Rain getRain() {
-        return rain;
-    }
-
-    public Wind getWind() {
-        return wind;
-    }
-
-    public int getDt() {
-        return dt;
+    public ArrayList<List> getList() {
+        return list;
     }
 }
